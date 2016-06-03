@@ -7,12 +7,14 @@
   <header>
     <a href="#"> Quang's Blog</a>
   </header>
-  <div>
+  {% for post in posts %}
     <div>
-        <p>published: 06.03.2014, 4:06</p>
-        <h2><a href="">My first post</a></h2>
-        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <div>
+        <p>publised: {{ post.publised_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaks }}</p>
+      </div>
     </div>
-  </div>
+  {% endfor %}
 </body>
 </html>
