@@ -1,5 +1,10 @@
+html, body {
+  height: 100%;
+  background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_embroidery.png");
+}
+
 .page-header {
-  background-color: #c0392b;
+  background-color: #333334;
   margin: 0;
   padding: 15px 10px 15px 10px;
 }
@@ -9,11 +14,13 @@
 }
 
 .page-header h1 a, .page-header h1 a:hover, .page-header h1 a:active {
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
 }
 
 .container { 
+  height: 100%;
+  background-color: #EFEFEF;
 }
 
 .left_col {
@@ -23,3 +30,28 @@
 h1 a {
   color: white;
 }
+
+h2, h2 a, h2 a:hover{
+  color: #FF3B3F;
+}
+
+p {
+  font-size: 14px;
+  width: 75%;
+}
+
+/********* sidebar ********/
+.sidebar {
+  margin-top: 20px;
+  color: #821D1D;
+}
+
+h5 a{
+  color: #821D1D;
+}
+
+hr {
+  margin-top: 5px;
+  border-top: 1px solid #333334;
+}
+
