@@ -4,8 +4,10 @@
   {% for post in posts %}
     <div>
       <div>
-        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-        <p>published: {{ post.published_date }}</p>
+        <h2><a href="{% url 'post_detail' post_id=post.pk %}">{{ post.title }}</a></h2>
+        {% if post.published_date %}
+          <p>published: {{ post.published_date }}</p>
+        {% endif %}
         <p>{{ post.text|linebreaks }}</p>
       </div>
     </div>
