@@ -1,5 +1,6 @@
 html, body {
   background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_embroidery.png");
+  padding-bottom: 1px;
 }
 
 .page-header {
@@ -21,7 +22,8 @@ html, body {
 .post_title {
   position: relative;
 }
-#edit_btn {
+
+.options {
   position: absolute;
   right: 0;
   top: 50%;
@@ -29,15 +31,24 @@ html, body {
 }
 
 .top-menu {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.options p {
+  color: red;
+}
+
+.pub_edit_btn {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%);
 }
 
 .container { 
   height: 100%;
-  background-color: #EFEFEF;
+  background-color: white;
 }
 
 .left_col {
