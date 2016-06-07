@@ -10,8 +10,8 @@
         {% endif %}
         <p>{{ post.text|linebreaks }}</p>
       </div>
-      
-      <a href="{% url 'blog.views.post_detail' post_id=post.pk %}"> Comments: {{ post.approved_comments.count }}</a>
+
+      <a href="{% url 'blog.views.post_detail' post_id=post.pk %}"> Comments: {{ post.comments.count }}</a>
     </div>
   {% endfor %}
 {% endblock %}
