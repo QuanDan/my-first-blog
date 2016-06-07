@@ -14,13 +14,16 @@
 <body>
   <div class="container">
     <header class="page-header">
+      {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+      {% endif %}
       <h1><a href="/"> Quang's Blog</a></h1>
     </header>
-    <div class="col-xs-11 col-sm-11 col-md-10 col-lg-10 left_col">
+    <div class="col-sm-10 col-lg-10 left_col">
       {% block content %}
       {% endblock %}
     </div>
-    <div class="col-xs-10 col-sm-10 col-md-2 col-lg-2"> 
+    <div class="col-sm-2 col-lg-2"> 
       <div class="sidebar text-center">
         <h4>Right Side Bar</h4>
         <hr>
