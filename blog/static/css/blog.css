@@ -86,3 +86,22 @@ hr {
   border-top: 1px solid #333334;
 }
 
+
+/****** post_detail ******/
+.comment {
+  margin: 20px 0px 20px 20px;
+}
+
+.post-form p input, .post-form p textarea {
+  border: 1px solid #AFDADE;
+}
+
+.comment .date {
+  display: inline-block;
+  font-size: 12px;
+  color: #767676;
+}
+
+strong {
+  color: #128ee9;
+}
